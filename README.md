@@ -47,7 +47,7 @@ The following technical indicators are used as features for the prediction model
 ### Calculation
 The lagged return for a given lag \( k \) is calculated as follows:
 
-\[ \text{Lagged Return}_k = \frac{P_t - P_{t-k}}{P_{t-k}} \]
+Lagged Return_k = (P_t - P_{t-k}) / P_{t-k}
 
 Where:
 - \( P_t \) is the price at time \( t \).
