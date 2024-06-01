@@ -47,11 +47,14 @@ The following technical indicators are used as features for the prediction model
 ### Calculation
 The lagged return for a given lag \( k \) is calculated as follows:
 
-Lagged Return_k = (P_t - P_{t-k}) / P_{t-k}
+```math
+Lagged Return k = (P_t - P_{t-k}) / P_{t-k}
+```
 
 Where:
 - \( P_t \) is the price at time \( t \).
 - \( P_{t-k} \) is the price \( k \) periods before time \( t \).
+
 
 ### Example
 Suppose we have the following closing prices for a stock over 5 hours:
@@ -139,9 +142,9 @@ Time: 2024-05-31 23:00:00, Direction: Up, Predicted Price: 18726.61 (18689.15 - 
 ## Evaluation Metrics
 ### Precision
 **Precision** is the ratio of correctly predicted positive observations to the total predicted positives. It is a measure of the accuracy of the positive predictions.
-
-\[ \text{Precision} = \frac{TP}{TP + FP} \]
-
+```math
+{Precision} = \frac{TP}{TP + FP} 
+```
 Where:
 - \( TP \) (True Positives) are the positive instances correctly classified.
 - \( FP \) (False Positives) are the negative instances incorrectly classified as positive.
@@ -149,22 +152,27 @@ Where:
 ### Recall
 **Recall** (Sensitivity or True Positive Rate) is the ratio of correctly predicted positive observations to all observations in the actual class.
 
-\[ \text{Recall} = \frac{TP}{TP + FN} \]
+```math
+{Recall} = \frac{TP}{TP + FN} 
+```
 
 Where:
+
 - \( TP \) (True Positives) are the positive instances correctly classified.
 - \( FN \) (False Negatives) are the positive instances incorrectly classified as negative.
 
 ### Accuracy
 **Accuracy** is the ratio of correctly predicted observations to the total observations. It is the most intuitive performance measure and it is simply a ratio of correctly predicted observations to the total observations.
 
-\[ \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} \]
-
+```math
+{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} 
+```
 Where:
 - \( TP \) (True Positives) are the positive instances correctly classified.
 - \( TN \) (True Negatives) are the negative instances correctly classified.
 - \( FP \) (False Positives) are the negative instances incorrectly classified as positive.
 - \( FN \) (False Negatives) are the positive instances incorrectly classified as negative.
+
 
 ### Confusion Matrix
 A **Confusion Matrix** is a summary of prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. This matrix gives insight not only into the errors being made by a classifier but more importantly the types of errors that are being made.
