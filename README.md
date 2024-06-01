@@ -65,9 +65,9 @@ Suppose we have the following closing prices for a stock over 5 hours:
 - Hour 5: $105
 
 The lagged returns can be calculated as:
-- **1-hour lagged return** at Hour 2: ({102 - 100}\\{100} = 0.02) or 2%
-- **1-hour lagged return** at Hour 3: ({101 - 102}\\{102} = -0.0098) or -0.98%
-- **2-hour lagged return** at Hour 3: ({101 - 100}\\{100} = 0.01) or 1%
+- **1-hour lagged return** at Hour 2: ({102 - 100}/{100} = 0.02) or 2%
+- **1-hour lagged return** at Hour 3: ({101 - 102}/{102} = -0.0098) or -0.98%
+- **2-hour lagged return** at Hour 3: ({101 - 100}/{100} = 0.01) or 1%
 - And so on.
 
 ## Modeling
